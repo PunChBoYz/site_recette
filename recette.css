@@ -1,7 +1,9 @@
 body{
     background-color: #8ba1bb;
     font-family: Arial;
-    min-width: 510px;
+    min-width: 310px;
+    margin: 0px;
+
 }
 
 p.nameOfSite{  
@@ -18,10 +20,10 @@ p.nameOfSite{
 
 div.contenu{
     background-color: whitesmoke;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 0px;
-    padding: 30px;
+    padding: 20px 10px 20px 10px;
     border-radius: 20px;
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
     overflow: auto;
@@ -36,13 +38,13 @@ p.description{
     display: inline-block;
     font-size: 14px;
     margin-top: 0;
-    
+    font-style: italic;
 }
 div.centre{
     text-align: center;
 }
 div.nameOfSite{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: -35px;
 }
 div.separateur{
@@ -69,29 +71,25 @@ table.info{
     width: 100%;
     color: white;
     background-color: #8ba1bbc0;
-    height: 80px;
+    height: 60px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 table.info th{
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     width: 25%;
     vertical-align: bottom;
     padding-bottom: 8px;
 }
 table.info td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     width: 25%;
     vertical-align: top;
 }
 div.info{
     position: relative;
-}
-
-div.colonne{
-    width: 45%;
 }
 
 div.colonne h2{
@@ -102,6 +100,9 @@ div.colonne h2{
     /* border-bottom: 5px solid #8ba1bb;
     border-radius: 10px; */
 }
+div.colonne1{
+    margin-bottom: 5%;
+}
 
 div.colonne1 h2{
     border-bottom: 5px solid #8ba1bb;
@@ -111,14 +112,6 @@ div.colonne1 h2{
 div.colonne2 h2{
     border-bottom: 5px solid #8ba1bb;
     border-bottom-right-radius: 10px;
-}
-
-div.colonne1{
-    display: inline-block;
-    margin-right: 10%;
-}
-div.colonne2{
-    float: right;
 }
 
 div.ingredient{
@@ -162,4 +155,45 @@ div.ingredient p{
     margin-top: 1px;
     margin-bottom: 1px;
     border-radius: 10px;
+}
+/* style pour ordi */
+@media only screen and (min-width: 768px){
+    body{
+        min-width: 510px;    
+    }
+    div.contenu{
+        background-color: whitesmoke;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 30px;
+    }
+    table.info th{
+        font-size: 18px;
+    }
+    table.info td{
+        font-size: 14px;
+    }
+    table.info{
+        height: 80px;
+    }
+    div.colonne2{
+        float: right;
+    }
+    div.colonne{
+        width: 47%;
+    }   
+    div.colonne1{
+        display: inline-block;
+        margin-right: 6%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 695px;
+        display: block;
+        }
 }
